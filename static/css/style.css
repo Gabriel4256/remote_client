@@ -1,0 +1,217 @@
+.mdl-layout__header-row {
+    color: #fff;
+    margin: 0 72px;
+}
+.mdl-button {
+    color: #fff !important;
+}
+.mdl-grid {
+    width: 100%;
+}
+.mdl-cell {
+    text-align: center;
+    color:#fff;
+    padding:25px;
+}
+.host-container {
+    position: relative;
+    cursor: pointer;
+    width: 150px !important;
+    height: 150px !important;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+#backIcon {
+    height: 32px;
+    width: 32px;
+    margin-left: -20px;
+    padding-right: 20px;
+}
+#backIcon:hover {
+    cursor: pointer;
+}
+.mdl-dialog {
+    border: none;
+    box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+    width: 400px; 
+}
+.mdl-dialog__title {
+    padding: 24px 24px 0;
+    margin: 0;
+    font-size: 2.5rem; 
+}
+.mdl-dialog__content {
+    padding: 20px 24px 24px 24px;
+    color: rgba(0,0,0, 0.54); 
+}
+#naclSpinner {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: center;
+}
+#loadingSpinner {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+#snackButton {
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+.mdl-snackbar__text {
+    padding: 14px 30px 14px 30px;
+}
+.mdl-snackbar {
+    min-width:0px;
+}
+main {
+    padding: 50px 100px;
+}
+#bitrateField {
+    text-align: center;
+    display: block;
+    padding-top: 15px;
+}
+#hostSettings {
+    padding: 5px 10px;
+    border: 1px dashed;
+    margin: 10px 0;
+}
+#hostSettings p {
+    margin: 0;
+}
+#hostSettings .mdl-textfield {
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+#hostSettings #GFEHostIPField {
+    padding-bottom: 0px;
+}
+#hostSettings #selectHost {
+    padding: 0px;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background: none;
+}
+#hostSettings .button-holder {
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.remove-host {
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:24px;
+    height:24px;
+    margin-top: 15px;
+    /*to account for the shadow*/
+    cursor:pointer;
+    z-index: 5;
+    background: url('\\static\\res\\ic_remove_circle_white_24px.svg') no-repeat;
+    border: 0;
+    cursor: pointer;
+}
+/*.remove-host:hover, .remove-host:focus {
+    background-image: url('\\static\\res\\ic_remove_circle_white_24px.svg');
+}*/
+#pairButton {
+    margin: 3px;
+}
+#showAppsButton {
+    margin: 3px;
+}
+#listener {
+    overflow: hidden;
+    margin-top: 0px;
+    height: 0px;
+}
+.fullscreen {
+    height: 100vh !important;
+    overflow: none !important;
+    margin: auto !important;
+    padding: 0 !important;
+    width 100%;
+    border: none !important;
+}
+.box-art {
+    background-color: transparent;
+}
+.box-art > img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+}
+.box-art:hover {
+    cursor: pointer;
+}
+.current-game {
+    border: 3px solid green;
+}
+.not-current-game {
+    border: 1px solid black;
+}
+.game-title {
+    color: #000;
+    font-weight: bold;
+}
+.host-cell {
+    display: inline-block;
+    width: 150px !important;
+    height: 150px !important;
+    background-color: #000;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.host-cell-inactive {
+    border: 3px solid red;
+}
+.host-cell:hover {
+    cursor: pointer;
+    color: #000 !important;
+}
+.host-cell:hover img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+.host-cell img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+.cancel-current:hover {
+    cursor: pointer;
+}
+.cancel-current {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.cancel-current img {
+    margin-right: 5px;
+}
+.cancel-current .game-title {
+    color: #fff;
+}
